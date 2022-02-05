@@ -11,11 +11,11 @@ app = Flask(__name__)
 app.register_blueprint(app_views)
 """ Close Storage """
 
+
 @app.teardown_appcontext
 def close_base(self):
     """ Close base data """
     storage.close()
-
 
 
 if __name__ == "__main__":
