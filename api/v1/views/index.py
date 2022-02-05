@@ -9,3 +9,17 @@ from models import storage
 def hbnbStatus():
     """hbnbStatus"""
     return jsonify({"status": "OK"})
+
+
+@app_views.route('/stats')
+def stat():
+    """endpoint that retrieves the number of each objects"""
+    dic = {
+        "amenities": storage.count("Amenity"),
+        "cities": storage.count("City"),
+        "places": storage.count("Place"),
+        "reviews": storage.count("Review"),
+        "states": storage.count("State"),
+        "users": storage.count("User")
+    }
+    return(jsonify(dic))
