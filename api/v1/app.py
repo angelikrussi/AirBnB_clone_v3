@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """ app.py """
-from models import storage
-from api.v1.views import app_views
+import storage from models
+import app_views from api.v1.views
 from os import environ
 from flask import Flask, render_template, make_response, jsonify
 from flask_cors import CORS
