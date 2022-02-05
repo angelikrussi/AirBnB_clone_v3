@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Index"""
 from models import storage
-from api.v1.views.index import *
+from api.v1.views import app_views
 from flask import Flask, Blueprint, jsonify
 
 
