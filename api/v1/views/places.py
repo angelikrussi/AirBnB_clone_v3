@@ -32,7 +32,7 @@ def get_place(place_id):
     return jsonify(place.to_dict())
 
 @app_views.route('/places/<string:place_id>', methods=['DELETE'],
-                                  strict_slashes=False)
+                 strict_slashes=False)
 def delete_place(place_id):
     """Delete a Place"""
     place = storage.get("Place", place_id)
