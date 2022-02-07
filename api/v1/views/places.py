@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""places.py"""
+"""New view for Place objects that handles all default RESTFul API"""
 
 from api.v1.views import app_views
 from flask import abort, jsonify, make_response, request
@@ -12,7 +12,7 @@ from models.user import User
 @app_views.route('/cities/<string:city_id>/places', methods=['GET'],
                  strict_slashes=False)
 def get_places(city_id):
-    """New view for Place objects that handles all default RESTFul API"""
+    """list all place """
     city = storage.get("City", city_id)
     if city is None:
         abort(404)
@@ -25,6 +25,15 @@ def get_places(city_id):
 @app_views.route('/places/<string:place_id>', methods=['GET'],
                  strict_slashes=False)
 def get_place(place_id):
+    """Retrieves Place object"""
+    place = storage.get("Place", place_id)
+    if place is None:
+        abort(404)
+    return jsonify(place.to_dict())
+
+@app_views.route('/places/<string:place_id>', methods=['DELETE'],
+                                  strict_slashes=False)
+def delete_place(place_id):
     """Delete a Place"""
     place = storage.get("Place", place_id)
     if place is None:
