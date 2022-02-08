@@ -155,13 +155,13 @@ No known bugs at this time.
 
 ## Authors
 
-*Estefania Russi - [Github](https://github.com/angelikrussi)
-*Paola Garcia - [Github](https://github.com/PaolaAndreaGA)
+* Estefania Russi - [Github](https://github.com/angelikrussi)
+* Paola Garcia - [Github](https://github.com/PaolaAndreaGA)
 
-*First part of Airbnb:
-*Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-*Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+* First part of Airbnb:
+* Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
+* Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
 
-*Second part of Airbnb: Joann Vuong
+* Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
